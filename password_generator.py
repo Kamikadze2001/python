@@ -14,13 +14,13 @@ random.shuffle(symbols)
 
 
 def len():
-    lenght = int(input('How long your password should be? '))
+    length = int(input('How long your password should be? '))
     alphabet_number = int(input('How many letters should your password have? '))
     digits_number = int(input('How many digits should your password have? '))
     symbols_number = int(input('How many symbols should your password have? '))
 
-    if lenght < alphabet_number + digits_number + symbols_number:
-        print('Number of choosen characters is bigger than chosen lenght of the password!')
+    if length < alphabet_number + digits_number + symbols_number:
+        print('Number of choosen characters is bigger than chosen length of the password!')
         len()
     else:
         password = []
@@ -34,8 +34,8 @@ def len():
         for i in range(symbols_number):
             password.append(random.choice(symbols))
 
-        if lenght > alphabet_number + digits_number + symbols_number:
-            for i in range(lenght-alphabet_number + digits_number + symbols_number):
+        if length > alphabet_number + digits_number + symbols_number:
+            for i in range(length-alphabet_number + digits_number + symbols_number):
                 password.append(random.choice(characters))
 
 
