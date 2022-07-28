@@ -21,7 +21,6 @@ def number():
 
 def conversion():           
     list_to_string()
-    print(user_input)
     user_list = list(map(int, str(user_input)))
     cow = 0
     for i in range(4):
@@ -29,8 +28,6 @@ def conversion():
             cow += 1
     bulls = 0
     bulls = len(set(random) & set(user_list)) - cow
-    print(user_list, random)
-    
     if cow != 4:
         print('Try again!',cow, 'cow', bulls, 'bulls')
         number()
