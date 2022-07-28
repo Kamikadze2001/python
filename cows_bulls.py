@@ -28,8 +28,10 @@ def conversion():
             cow += 1
     bulls = 0
     bulls = len(set(random) & set(user_list)) - cow
+        
     if cow != 4:
-        print('Try again!',cow, 'cow', bulls, 'bulls')
+        print(random)
+        print('Try again!',cow, 'cows', bulls, 'bulls')
         number()
     else:
         print('You won! The number was',list_to_string(),'Number of tries needed:',number_of_plays)
